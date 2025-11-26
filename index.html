@@ -1,0 +1,514 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>  Questionnaire de Satisfaction  </title>
+    <style>        
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background: #cec3ad;
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0b1c2c;
+            margin-top: 40px;
+        }
+        .question {
+            margin-bottom: 25px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .options input {
+            margin-right: 8px;
+        }
+        textarea, input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+        button {
+            background: #0b1c2c;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #12324c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="image.png" alt="Logo Office Notarial" style="max-width:140px; display:block; margin:0 auto 15px auto;">
+        <h1>Questionnaire de Satisfaction</h1>
+        <p>Office Notarial</p>
+    </div>
+
+    <div class="container">
+        <p>
+            La satisfaction de nos clients est au cœur de nos préoccupations. Merci de prendre quelques minutes pour répondre à ce questionnaire. Vos réponses resteront confidentielles.
+        </p>
+
+        <div class="question">
+            <h2>1 - Comment avez-vous connu l'office ?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="Déjà client"> Déjà client</label><br>
+                <label><input type="radio" name="q1" value="Recommandation"> Recommandation</label><br>
+                <label><input type="radio" name="q1" value="Situation géographique"> Situation géographique</label><br>
+                <label><input type="radio" name="q1" value="Internet"> Internet</label><br>
+                <label><input type="radio" name="q1" value="Autre"> Autre</label><br>
+                <input type="text" name="q1_autre" placeholder="Si autre, précisez...">
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>2 - Nature du dossier</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="Vente"> Vente</label><br>
+                <label><input type="radio" name="q2" value="Succession"> Succession</label><br>
+                <label><input type="radio" name="q2" value="Divorce"> Divorce</label><br>
+                <label><input type="radio" name="q2" value="Donation"> Donation</label><br>
+                <label><input type="radio" name="q2" value="Famille"> Couple / Famille</label><br>
+                <label><input type="radio" name="q2" value="Affaires"> Affaires / Société</label><br>
+                <label><input type="radio" name="q2" value="Bail"> Bail / Fond de commerce</label><br>
+                <label><input type="radio" name="q2" value="Consultation"> Consultation</label><br>
+                <label><input type="radio" name="q2" value="Autre"> Autre</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>3 - Votre niveau de satisfaction</h2>
+
+            <div class="options">
+                <label><strong>Accueil à l'office :</strong></label><br>
+                <label><input type="radio" name="accueil" value="Très satisfait"> Très satisfait</label>
+                <label><input type="radio" name="accueil" value="Satisfait"> Satisfait</label>
+                <label><input type="radio" name="accueil" value="Insatisfait"> Insatisfait</label>
+                <label><input type="radio" name="accueil" value="Très insatisfait"> Très insatisfait</label>
+                <label><input type="radio" name="accueil" value="NSP"> Ne se prononce pas</label>
+            </div><br>
+
+            <div class="options">
+                <label><strong>Accueil téléphonique :</strong></label><br>
+                <label><input type="radio" name="tel" value="Très satisfait"> Très satisfait</label>
+                <label><input type="radio" name="tel" value="Satisfait"> Satisfait</label>
+                <label><input type="radio" name="tel" value="Insatisfait"> Insatisfait</label>
+                <label><input type="radio" name="tel" value="Très insatisfait"> Très insatisfait</label>
+                <label><input type="radio" name="tel" value="NSP"> Ne se prononce pas</label>
+            </div><br>
+
+            <div class="options">
+                <label><strong>Information sur l'avancement :</strong></label><br>
+                <label><input type="radio" name="avance" value="Très satisfait"> Très satisfait</label>
+                <label><input type="radio" name="avance" value="Satisfait"> Satisfait</label>
+                <label><input type="radio" name="avance" value="Insatisfait"> Insatisfait</label>
+                <label><input type="radio" name="avance" value="Très insatisfait"> Très insatisfait</label>
+                <label><input type="radio" name="avance" value="NSP"> Ne se prononce pas</label>
+            </div><br>
+
+            <div class="options">
+                <label><strong>Disponibilité des collaborateurs :</strong></label><br>
+                <label><input type="radio" name="dispo" value="Très satisfait"> Très satisfait</label>
+                <label><input type="radio" name="dispo" value="Satisfait"> Satisfait</label>
+                <label><input type="radio" name="dispo" value="Insatisfait"> Insatisfait</label>
+                <label><input type="radio" name="dispo" value="Très insatisfait"> Très insatisfait</label>
+                <label><input type="radio" name="dispo" value="NSP"> Ne se prononce pas</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>4 - Sur une échelle de 0 à 10, recommanderiez-vous l'office ?</h2>
+            <input type="text" name="q4" placeholder="Votre note de 0 à 10" />
+        </div>
+
+        <div class="question">
+            <h2>5 - Qu'avez-vous envie d'ajouter ?</h2>
+            <textarea name="q5" rows="4" placeholder="Vos remarques..."></textarea>
+        </div>
+
+        <div class="question">
+            <h2>6 - Vos coordonnées (facultatif)</h2>
+            <input type="text" name="nom" placeholder="Nom" />
+            <br><br>
+            <input type="text" name="prenom" placeholder="Prénom" />
+            <br><br>
+            <input type="email" name="email" placeholder="Email" />
+            <br><br>
+
+            <label><input type="checkbox" name="autorisation"> J'autorise le traitement de mes informations.</label>
+        </div>
+
+        <button type="submit">Envoyer le formulaire</button>
+
+        <p style="margin-top: 30px; font-style: italic;">Nous vous remercions d’avoir rempli ce questionnaire !</p>
+
+    </div>
+
+    <footer>
+        © Apitasolution - Tous droits réservés
+    </footer>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire de Satisfaction - Office Notarial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            height: 150px;
+            background: #cec3ad;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        .separator {
+    width: 100%;
+    height: 2px;
+    margin: 25px auto 35px auto;
+    background: linear-gradient(to right, transparent, #6d1d2a, transparent);
+    position: relative;
+}
+
+.separator::after {
+    content: "⚖️";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0 8px;
+    font-size: 20px;
+    color: #6d1d2a;
+}
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        } 
+        p {
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #0b1c2c;
+            margin-top: 40px;
+        }
+        .question {
+            margin-bottom: 25px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .options input {
+            margin-right: 8px;
+        }
+        textarea, input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #0b1c2c;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #12324c;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+        }
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none;
+        }
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("7Dtf8RrBaGhPibuYq"); 
+    })();
+</script>
+</head>
+<body>
+    <div class="header">
+        <img src="log_rm.png" alt="Logo Office Notarial" style="max-width:200px; display:block; margin:0 auto 15px auto;">
+        <div style= "margin-top:-40px; height: 20px;" >
+             <h1>Questionnaire de Satisfaction</h1>
+        <!-- <p>Office Notarial</p> -->
+    </div>     
+    </div>
+     <div class="separator"></div>
+    <div class="container">
+        <p>
+            La satisfaction de nos clients est au cœur de nos préoccupations. Merci de prendre quelques minutes pour répondre à ce questionnaire. Vos réponses resteront confidentielles.
+        </p>
+
+        <div class="success-message" id="successMessage"></div>
+        <div class="error-message" id="errorMessage"></div>
+
+        <form id="satisfactionForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>1 - Comment avez-vous connu l'office ?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="Déjà client"> Déjà client</label><br>
+                    <label><input type="radio" name="q1" value="Recommandation"> Recommandation</label><br>
+                    <label><input type="radio" name="q1" value="Situation géographique"> Situation géographique</label><br>
+                    <label><input type="radio" name="q1" value="Internet"> Internet</label><br>
+                    <label><input type="radio" name="q1" value="Autre"> Autre</label><br>
+                    <input type="text" name="q1_autre" placeholder="Si autre, précisez...">
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>2 - Nature du dossier</h2>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="Vente"> Vente</label><br>
+                    <label><input type="radio" name="q2" value="Succession"> Succession</label><br>
+                    <label><input type="radio" name="q2" value="Divorce"> Divorce</label><br>
+                    <label><input type="radio" name="q2" value="Donation"> Donation</label><br>
+                    <label><input type="radio" name="q2" value="Famille"> Couple / Famille</label><br>
+                    <label><input type="radio" name="q2" value="Affaires"> Affaires / Société</label><br>
+                    <label><input type="radio" name="q2" value="Bail"> Bail / Fond de commerce</label><br>
+                    <label><input type="radio" name="q2" value="Consultation"> Consultation</label><br>
+                    <label><input type="radio" name="q2" value="Autre"> Autre</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h2>3 - Votre niveau de satisfaction</h2>
+
+                <div class="options">
+                    <label><strong>Accueil à l'office :</strong></label><br>
+                    <label><input type="radio" name="accueil" value="Très satisfait"> Très satisfait</label>
+                    <label><input type="radio" name="accueil" value="Satisfait"> Satisfait</label>
+                    <label><input type="radio" name="accueil" value="Insatisfait"> Insatisfait</label>
+                    <label><input type="radio" name="accueil" value="Très insatisfait"> Très insatisfait</label>
+                    <label><input type="radio" name="accueil" value="NSP"> Ne se prononce pas</label>
+                </div><br>
+
+                <div class="options">
+                    <label><strong>Accueil téléphonique :</strong></label><br>
+                    <label><input type="radio" name="tel" value="Très satisfait"> Très satisfait</label>
+                    <label><input type="radio" name="tel" value="Satisfait"> Satisfait</label>
+                    <label><input type="radio" name="tel" value="Insatisfait"> Insatisfait</label>
+                    <label><input type="radio" name="tel" value="Très insatisfait"> Très insatisfait</label>
+                    <label><input type="radio" name="tel" value="NSP"> Ne se prononce pas</label>
+                </div><br>
+
+                <div class="options">
+                    <label><strong>Information sur l'avancement :</strong></label><br>
+                    <label><input type="radio" name="avance" value="Très satisfait"> Très satisfait</label>
+                    <label><input type="radio" name="avance" value="Satisfait"> Satisfait</label>
+                    <label><input type="radio" name="avance" value="Insatisfait"> Insatisfait</label>
+                    <label><input type="radio" name="avance" value="Très insatisfait"> Très insatisfait</label>
+                    <label><input type="radio" name="avance" value="NSP"> Ne se prononce pas</label>
+                </div><br>
+
+                <div class="options">
+                    <label><strong>Disponibilité des collaborateurs :</strong></label><br>
+                    <label><input type="radio" name="dispo" value="Très satisfait"> Très satisfait</label>
+                    <label><input type="radio" name="dispo" value="Satisfait"> Satisfait</label>
+                    <label><input type="radio" name="dispo" value="Insatisfait"> Insatisfait</label>
+                    <label><input type="radio" name="dispo" value="Très insatisfait"> Très insatisfait</label>
+                    <label><input type="radio" name="dispo" value="NSP"> Ne se prononce pas</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h2>4 - Sur une échelle de 0 à 10, recommanderiez-vous l'office ?</h2>
+                <input type="number" name="q4" min="0" max="10" placeholder="Votre note de 0 à 10" />
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h2>5 - Qu'avez-vous envie d'ajouter ?</h2>
+                <textarea name="q5" rows="4" placeholder="Vos remarques..."></textarea>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h2>6 - Vos coordonnées (facultatif)</h2>
+                <input type="text" name="nom" placeholder="Nom" />
+                <br><br>
+                <input type="text" name="prenom" placeholder="Prénom" />
+                <br><br>
+                <input type="email" name="email" placeholder="Email" />
+                <br><br>
+
+                <label><input type="checkbox" name="autorisation"> J'autorise le traitement de mes informations.</label>
+            </div>
+
+            <div class="button-group">
+                <button type="button" onclick="sendByEmail()">Envoyer le formulaire</button>
+            </div>
+
+            <p style="margin-top: 30px; font-style: italic;">Nous vous remercions d'avoir rempli ce questionnaire !</p>
+        </form>
+    </div>
+
+    <footer>
+        © Apitasolution - Tous droits réservés
+    </footer>
+
+    <script>
+    function getFormData() {
+        const form = document.getElementById('satisfactionForm');
+        const formData = new FormData(form);
+        const data = {};
+        
+        for (let [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+        
+        return data;
+    }
+
+    function sendByEmail() {
+        const data = getFormData();
+
+        if (!data.email) {
+            showMessage('error', 'Veuillez renseigner votre adresse email dans la section coordonnées.');
+            return;
+        }
+
+        const templateParams = {
+            q1: data.q1 || "Non répondu",
+            q1_autre: data.q1_autre || "",
+            q2: data.q2 || "Non répondu",
+            accueil: data.accueil || "Non répondu",
+            tel: data.tel || "Non répondu",
+            avance: data.avance || "Non répondu",
+            dispo: data.dispo || "Non répondu",
+            q4: data.q4 || "Non répondu",
+            q5: data.q5 || "Aucune remarque",
+            nom: data.nom || "-",
+            prenom: data.prenom || "-",
+            email: data.email || "-",
+            date: new Date().toLocaleDateString('fr-FR') + " à " + new Date().toLocaleTimeString('fr-FR'),
+        };
+
+        emailjs.send("service_tkvu78p", "template_23caqj4", templateParams)
+            .then(() => {
+                showMessage('success', 'Votre questionnaire a été envoyé avec succès !');
+                document.getElementById('satisfactionForm').reset();
+            })
+            .catch(() => {
+                showMessage('error', 'Erreur lors de l\'envoi. Vérifiez votre configuration EmailJS.');
+            });
+    }
+
+        function showMessage(type, message) {
+            const successDiv = document.getElementById('successMessage');
+            const errorDiv = document.getElementById('errorMessage');
+            
+            successDiv.style.display = 'none';
+            errorDiv.style.display = 'none';
+            
+            if (type === 'success') {
+                successDiv.textContent = message;
+                successDiv.style.display = 'block';
+            } else {
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+            }
+            
+            // Faire défiler vers le message
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Masquer le message après 5 secondes
+            setTimeout(() => {
+                successDiv.style.display = 'none';
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
